@@ -18,13 +18,13 @@ import Cart from './Component/Cart';
 function App() {
   return (
     <>
-    <Header/>
+      <Header/>
       <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/signup" element={<SignUp />} />
           <Route exact path="/logi" element={<Logi />} />
           {/* <Route exact path="/dump" element={<CartPage />} /> */}
-          <Route exact path="/dump" element={<Cart />} />
+          <Route exact path="/dump" element={<CartPage />} />
           <Route exact path="/individual" element={<Individual/>} />
           <Route exact path="/industry" element={<Industry/>} />
           <Route exact path="/society" element={<Society/>} />

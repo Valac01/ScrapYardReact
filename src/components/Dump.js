@@ -1,30 +1,25 @@
 import React, { useContext }  from "react";
 import { IoIosCart } from "react-icons/io";
-import { CartContext } from "../Component/Cart";
 
-const Dump = (props) => {
-
-  const { item, clearCart, totalItem, totalAmount } = useContext(CartContext);
-
-  // const { totalItem} = useContext(CartContext);
+const Dump = ({count}) => {
   return (
     <div style={{ fontSize: "20px", position: "relative" }}>
       <span
         style={{
           position: "absolute",
           background: "red",
-          width: "15px",
-          height: "15px",
-          borderRadius: "5px",
+          width: "18px",
+          height: "18px",
+          borderRadius: "9999px",
           fontSize: "10px",
           border: "1px solid #fff",
           textAlign: "center",
-          alignSelf: "center",
           top: "-2px",
           right: "-6px",
+          color: "white"
         }}
       >
-        {props.count}
+        {count}
       </span>
       <IoIosCart style={{color: "#fff", fontSize:"35px"}} />
     </div>
